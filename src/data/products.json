@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "CAMISETA NIKE ",
+      "name": "CAMISETA NIKE",
       "price": 149.0,
       "category": "roupas",
       "sizes": ["M", "G", "GG", "XGG"],
@@ -14,20 +14,20 @@
       "name": "CAMISETA NIKE BASIC",
       "price": 149.0,
       "category": "roupas",
-      "sizes": ["P", "M",  "G", "GG"],
+      "sizes": ["P", "M", "G", "GG"],
       "image": "img/produto-2.jpg",
       "isNew": true,
       "highlight": false
     },
     {
-        "id": 3,
-        "name": "CAMISETA NIKE PANDA",
-        "price": 259.99,
-        "category": "roupas",
-        "sizes": ["P", "M",  "G", "GG"],
-        "image": "img/produto-3.jpg",
-        "isNew": true,
-        "highlight": false
+      "id": 3,
+      "name": "CAMISETA NIKE PANDA",
+      "price": 259.99,
+      "category": "roupas",
+      "sizes": ["P", "M", "G", "GG"],
+      "image": "img/produto-3.jpg",
+      "isNew": true,
+      "highlight": false
     },
     {
       "id": 4,
@@ -40,34 +40,34 @@
       "highlight": false
     },
     {
-        "id": 5,
-        "name": "TÊNIS NIKE V5 RNR",
-        "price": 699.99,
-        "category": "calcados",
-        "sizes": ["39", "40", "41", "42"],
-        "image": "img/produto-5.jpg",
-        "isNew": false,
-        "highlight": false
+      "id": 5,
+      "name": "TÊNIS NIKE V5 RNR",
+      "price": 699.99,
+      "category": "calcados",
+      "sizes": ["39", "40", "41", "42"],
+      "image": "img/produto-5.jpg",
+      "isNew": false,
+      "highlight": false
     },
     {
-        "id": 6,
-        "name": "TÊNIS NIKE UPLIFT SC",
-        "price": 519.99,
-        "category": "calcados",
-        "sizes": ["38", "39", "40", "41", "42"],
-        "image": "img/produto-6.jpg",
-        "isNew": false,
-        "highlight": false
+      "id": 6,
+      "name": "TÊNIS NIKE UPLIFT SC",
+      "price": 519.99,
+      "category": "calcados",
+      "sizes": ["38", "39", "40", "41", "42"],
+      "image": "img/produto-6.jpg",
+      "isNew": false,
+      "highlight": false
     },
     {
-        "id": 7,
-        "name": "SLIDE NIKE",
-        "price": 289.00,
-        "category": "calcados",
-        "sizes": ["40", "41", "42", "43", "44"],
-        "image": "img/produto-6.jpg",
-        "isNew": false,
-        "highlight": false
-    },
+      "id": 7,
+      "name": "SLIDE NIKE",
+      "price": 289.0,
+      "category": "calcados",
+      "sizes": ["40", "41", "42", "43", "44"],
+      "image": "img/produto-6.jpg",
+      "isNew": false,
+      "highlight": false
+    }
   ]
   
