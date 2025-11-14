@@ -1,0 +1,17 @@
+# dependências
+node_modules/
+
+# build gerado pelo grunt
+dist/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# variáveis de ambiente
+.env

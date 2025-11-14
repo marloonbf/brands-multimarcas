@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Camiseta Oversized Nike Preta",
+      "price": 149.9,
+      "category": "roupas",
+      "sizes": ["M", "G", "GG"],
+      "image": "img/produto-1.jpg",
+      "isNew": true,
+      "highlight": true
+    },
+    {
+      "id": 2,
+      "name": "Cropped Adidas Branco",
+      "price": 129.9,
+      "category": "roupas",
+      "sizes": ["P", "M", "G"],
+      "image": "img/produto-2.jpg",
+      "isNew": true,
+      "highlight": false
+    },
+    {
+      "id": 3,
+      "name": "Tênis Nike Air Max Branco",
+      "price": 399.9,
+      "category": "calcados",
+      "sizes": ["37", "38", "39", "40", "41"],
+      "image": "img/produto-3.jpg",
+      "isNew": false,
+      "highlight": false
+    },
+    {
+      "id": 4,
+      "name": "Boné Aba Reta New Era Preto",
+      "price": 189.9,
+      "category": "bone",
+      "sizes": [],
+      "image": "img/produto-4.jpg",
+      "isNew": true,
+      "highlight": false
+    }
+  ]
+  

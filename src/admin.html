@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Brands Multimarcas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0f0f14;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #1b1b23;
+      color: #fff;
+    }
+
+    .section {
+      background: #14141c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      border: 1px solid #292933;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #1b1b23;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #2d2d38;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .btn--primary {
+      background: #3bd16f;
+      color: #000;
+    }
+
+    .btn--outline {
+      background: transparent;
+      border: 1px solid #aaa;
+      color: #fff;
+    }
+
+    .product-card__name {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .product-card__price {
+      color: #3bd16f;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Painel da Loja - Brands Multimarcas</h1>
+    <p>Faça login para cadastrar produtos, imagens, categorias e excluir itens.</p>
+
+    <!-- LOGIN -->
+    <section class="section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label>Usuário:</label>
+        <!-- 👇 Agora sem value, começa em branco -->
+        <input type="text" id="admin-user" placeholder="Digite o usuário">
+
+        <label>Senha:</label>
+        <!-- 👇 Também sem value -->
+        <input type="password" id="admin-pass" placeholder="Digite a senha">
+
+        <button type="submit" class="btn btn--primary">Entrar</button>
+        <span id="login-status"></span>
+      </form>
+    </section>
+
+    <!-- CADASTRO -->
+    <section class="section">
+      <h2>Novo produto</h2>
+
+      <form id="product-form">
+
+        <label>Nome do produto:</label>
+        <input type="text" id="p-name" required>
+
+        <label>Preço:</label>
+        <input type="number" step="0.01" id="p-price" required>
+
+        <label>Gênero:</label>
+        <select id="p-gender">
+          <option value="unissex">Unissex</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+
+        <label>Categoria:</label>
+        <select id="p-category">
+          <option value="roupas">Roupas</option>
+          <option value="calcados">Calçados</option>
+          <option value="bone">Boné</option>
+          <option value="relogio">Relógio</option>
+          <option value="bolsa">Bolsa</option>
+          <option value="garrafa-termica">Garrafa térmica</option>
+        </select>
+
+        <label>Tamanhos (P,M,G ou 37,38,39):</label>
+        <input type="text" id="p-sizes">
+
+        <label>Imagem do produto:</label>
+        <input type="file" id="p-image-file" accept="image/*">
+
+        <label>OU link / caminho manual:</label>
+        <input type="text" id="p-image" placeholder="img/foto.jpg ou https://...">
+
+        <label style="margin-top: 10px;">
+          <input type="checkbox" id="p-isNew" checked> Marcar como lançamento
+        </label>
+
+        <button type="submit" class="btn btn--primary" style="margin-top: 12px;">Salvar produto</button>
+        <span id="product-status"></span>
+      </form>
+    </section>
+
+    <!-- LISTA DE PRODUTOS -->
+    <section class="section">
+      <h2>Produtos cadastrados</h2>
+      <div id="admin-products-list" class="products-grid"></div>
+    </section>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
